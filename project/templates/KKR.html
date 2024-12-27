@@ -1,0 +1,80 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Kolkata Knight Riders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2E0854; /* KKR Purple */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+        }
+        header {
+            background-color: #FFD700; /* KKR Gold */
+            color: #2E0854;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #3B0B5B; /* Darker KKR Purple */
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #FFD700;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .team-logo {
+            margin: 20px 0;
+        }
+        .team-logo img {
+            width: 150px;
+        }
+        footer {
+            background-color: #3B0B5B;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+    </style>
+
+{% endblock %}
+{% block body %}
+    <header>
+        <h1>Kolkata Knight Riders</h1>
+        <p>The Pride of Kolkata</p>
+
+    </header>
+    
+    <main>
+        <div class="team-logo">
+            <img src="{% static 'images/KKR.png' %}" alt="KKR Logo">
+        </div>
+        <h2>Welcome to the KKR Fan Page!</h2>
+        <p>The Kolkata Knight Riders (KKR) are a celebrated franchise in the IPL, known for their flair and passion for the game.</p>
+        <p>Join the Knight Riders Army and cheer for the purple and gold!</p>
+    </main>
+    <footer>
+        <p>&copy;Kolkata Knight Riders Fan Page. All Rights Reserved.</p>
+    </footer>
+{% endblock %}

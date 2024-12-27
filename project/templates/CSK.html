@@ -1,0 +1,80 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Chennai Super Kings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7d559; /* CSK yellow */
+            color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            border-radius: 15px;
+        }
+        header {
+            background-color: #005CB9; /* CSK blue */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #ffeaa7; /* Soft yellow */
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #005CB9;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .team-logo {
+            margin: 20px 0;
+        }
+        .team-logo img {
+            width: 150px;
+        }
+        footer {
+            background-color: #005CB9;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+    </style>
+
+{% endblock %}
+{% block body %}
+    <header>
+        <h1>Chennai Super Kings</h1>
+        <p>The Pride of Tamil Nadu</p>
+        
+    </header>
+    
+    <main>
+        <div class="team-logo">
+            <img src="{% static 'images/CSK.png'  %}" alt="CSK image">
+        </div>
+        <h2>Welcome to the CSK Fan Page!</h2>
+        <p>The Chennai Super Kings are a celebrated franchise in the IPL, known for their flair and passion for the game.</p>
+        <p>Join the Knight Riders Army and cheer for the purple and gold!</p>
+    </main>
+    <footer>
+        <p>&copy;Chennai Super Kings Fan Page. All Rights Reserved.</p>
+    </footer>
+{% endblock %}

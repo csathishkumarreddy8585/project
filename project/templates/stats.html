@@ -1,0 +1,151 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+    <title>IPL 2024 - Player Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #ff4500;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff4500;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td,thead {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #ff4500;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+
+<header>
+    <h1>IPL 2024 - Player Stats</h1>
+    <p>Top Performers of the Indian Premier League</p>
+</header>
+
+<div class="container">
+    <h2>Top Batsmen</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Runs</th>
+                <th>Matches</th>
+                <th>Strike Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Virat Kohli</td>
+                <td>RCB</td>
+                <td>732</td>
+                <td>14</td>
+                <td>142.35</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>David Warner</td>
+                <td>DC</td>
+                <td>689</td>
+                <td>14</td>
+                <td>139.87</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jos Buttler</td>
+                <td>RR</td>
+                <td>650</td>
+                <td>14</td>
+                <td>158.12</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Top Bowlers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Wickets</th>
+                <th>Matches</th>
+                <th>Economy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Jasprit Bumrah</td>
+                <td>MI</td>
+                <td>25</td>
+                <td>14</td>
+                <td>6.85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rashid Khan</td>
+                <td>GT</td>
+                <td>23</td>
+                <td>14</td>
+                <td>6.65</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Yuzvendra Chahal</td>
+                <td>RR</td>
+                <td>21</td>
+                <td>14</td>
+                <td>7.12</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 IPL Official Website | All rights reserved</p>
+</footer>
+
+{% endblock %}

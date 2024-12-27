@@ -1,0 +1,175 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+    <title>IPL 2024 - Points Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #ff4500;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #ff4500;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+
+
+{% endblock %}
+{% block body %}
+<header>
+    <h1>IPL 2024 - Points Table</h1>
+    <p>Track the standings of your favorite teams</p>
+</header>
+
+<div class="container">
+    <h2>Points Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Matches Played</th>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Points</th>
+                <th>Net Run Rate (NRR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mumbai Indians</td>
+                <td>14</td>
+                <td>10</td>
+                <td>4</td>
+                <td>20</td>
+                <td>+1.120</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chennai Super Kings</td>
+                <td>14</td>
+                <td>9</td>
+                <td>5</td>
+                <td>18</td>
+                <td>+0.890</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Royal Challengers Bangalore</td>
+                <td>14</td>
+                <td>8</td>
+                <td>6</td>
+                <td>16</td>
+                <td>+0.650</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Kolkata Knight Riders</td>
+                <td>14</td>
+                <td>7</td>
+                <td>7</td>
+                <td>14</td>
+                <td>-0.120</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Delhi Capitals</td>
+                <td>14</td>
+                <td>6</td>
+                <td>8</td>
+                <td>12</td>
+                <td>-0.300</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sunrisers Hyderabad</td>
+                <td>14</td>
+                <td>5</td>
+                <td>9</td>
+                <td>10</td>
+                <td>-0.450</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Rajasthan Royals</td>
+                <td>14</td>
+                <td>5</td>
+                <td>9</td>
+                <td>10</td>
+                <td>-0.620</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Lucknow Super Giants</td>
+                <td>14</td>
+                <td>5</td>
+                <td>9</td>
+                <td>10</td>
+                <td>-0.620</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Punjab Kings</td>
+                <td>14</td>
+                <td>4</td>
+                <td>10</td>
+                <td>8</td>
+                <td>-0.800</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>Gujarat Titans</td>
+                <td>14</td>
+                <td>4</td>
+                <td>10</td>
+                <td>8</td>
+                <td>-0.800</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    <p>&copy; 2024 IPL Official Website | All rights reserved</p>
+</footer>
+
+{% endblock %}
